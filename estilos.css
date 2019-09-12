@@ -449,9 +449,201 @@ Azul pastel     #2e425e
 
 
         /*      PROMOCIONES    */
+
         .promotions{
-            visibility: hidden;
+            /* visibility: hidden; */
+            width: 1250px;
+            height: 620px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
+
+        .promotions-head{
+            background: rgba(255,255,255, 0.6);
+            padding: 0 0 5px 0;
+            display:flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 1250px;
+            height: 35px;
+
+            
+        }
+
+        .promotions-slogan{
+            display: flex;
+            justify-content: center;
+            font-family: 'Russ2';
+            font-size: 24px;
+            color: #ff5200;
+            margin:0;
+            padding:0;
+
+        }
+
+        .promotions-container{
+            background: rgba(255,255,255, 0.6);
+            display: flex;
+            height: 590px;  
+            width: 1250px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+
+
+        }
+        
+        .promo-details{
+            margin:0;
+            padding: 0 3px;
+            color: #ff5200;
+        }
+
+        .promo-details h3{
+            margin:0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .promo-details h5{
+            margin:0;
+            padding: 0;
+        }
+
+        .promo-price{
+            margin:0;
+            padding: 0;
+            color: #ff5200;
+        }
+        
+        .promo-bottom{
+            margin-top: 10px;
+            width: 1500px;
+            display:flex;
+            align-items:  flex-start;
+            justify-content: space-between;
+
+        }
+        
+        .promo-promo1
+        {
+            margin: 0 5px;
+            height: 320px;
+            width: 1500px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 10px #ff5200 solid;
+            border-radius: 20px;
+        }
+
+        .promo-promo1 .promo-imageContainer {
+            padding: 0;
+            height: 310px;
+            width: 1250px;
+            background: #ff5200;
+
+            border-bottom: 0;
+            display: flex;
+            align-content: flex-start;
+            justify-content: center;
+
+        }
+
+        .promo-promo1 .promo-image{
+            height: 290px;
+            width: 1200px;
+            border: 5px #ff5200 solid;
+            border-radius: 15px;
+        }
+
+        .promo-promo1 .promo-details{
+            color: #fff;
+            background: #ff5200;
+            width: 100%;
+        }
+
+
+        /*    PROMO 2    */
+        .promo-promo2
+        {
+            margin: 0 10px;
+            background: #fff; /* F445FC */
+            height: 225px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 5px #ff5200 solid;
+            border-radius: 15px;
+        }
+
+        .promo-promo2 .promo-imageContainer {
+            height: 225px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .promo-promo2 .promo-image{
+            height: 220px;
+            width: 400px;
+
+            border: 5px #fff solid;
+            border-radius: 15px;
+        }
+
+        /*    PROMO 3    */
+        .promo-promo3
+        {
+            margin: 0 10px;
+            background: #fff;   /*F9FF41 */
+            height: 225px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            border: 5px #ff5200 solid; /* #00f3ff */
+            border-radius: 15px;
+        }
+
+        .promo-promo3 .promo-imageContainer {
+            height: 225px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .promo-promo3 .promo-image{
+            height: 220px;
+            width: 400px;
+
+            border: 5px #fff solid;
+            border-radius: 15px;
+        }
+
+        .promo-promo3 .promo-details{
+            color: #ff5200;
+        }
+
+
+        .promo-bottom p{
+            font-size: 14px;
+            font-family: 'Russ2';
+            line-height: 20px;
+        }
+
+
 
 
         /*      SESION            */
