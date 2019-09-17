@@ -646,14 +646,86 @@ Azul pastel     #2e425e
 
 
 
-        /*      SESION            */
-        .session{
-            visibility: hidden;
-        }
-
+  
            /*      FOOTER            */
         .footer{
-            visibility: hidden;
+            margin-top: 20px;
+            background: #0f1620;
+            display: flex;
+            height: 200px;
+            width: 100%;
+            justify-content: space-around;
+            color: #fff;
+            align-items: center;
+
+            border-top: 5px #ff5200 solid;
+        }
+
+        .footer-descriptions{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+        }
+
+        .footer-title{
+            margin:0;
+            padding:0;
+            font-size: 20px;
+            font-family: 'Russ2';
+            color:#ff5200;
+        }
+
+        .footer-social{
+
+            display: flex;
+            align-items: center;
+            background: #fff;
+            display:flex;
+            width: 20%;
+            height: 60px;
+            border: 5px #fff solid;
+            border-radius: 20px;
+            margin:0;
+            padding: 0;
+        }
+
+        .footer-social ul{
+            width: 100%;
+            height: max-content;
+            margin:0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-social ul li{
+            margin:0;
+            padding:0;
         }
 
 
+        .footer-apps{
+            width: 20%;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-apps p{
+            font-size: 15px;
+            font-family: 'Russ2';
+            justify-content: center;
+            margin:8px;
+        }
+
+        .footer-apps img{
+            object-fit:contain;
+            width: 128px;
+            margin:5px;
+            margin-top:0;
+        }
