@@ -22,6 +22,31 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
+
+}
+
+[class^="icon-"], [class*="icon-"]
+{
+    font-size: 2em;
+    color: #fff;
+}
+
+.burger-button{
+    position: fixed;
+    top:10px;
+    left: 10px;
+
+    display: none;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:1%;
 
 }
 
@@ -59,24 +84,28 @@ figure{
 }
 
 .header{
-    
-    height: 90px;
+    /* position: absolute; */
+    display: flex;
+    max-height: 180px;
+    height:90px;
     width: 100%;
+    flex: 1;
     margin: 0;
     background-color: #0f1620;
-    display: flex;
     justify-content: space-around;
     padding: 0;
     position: fixed;
-
+    flex-wrap: wrap;
 }
 
 /* Logo y Hamburguesas al Grill */
 .header-branch{
     margin: 0;
     padding: 0;
+    max-height: 90px;
     height: 100%;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
@@ -182,26 +211,37 @@ figure{
     margin: 0;
     margin-top: 90px;
     padding: 0;
-    height: 620px; 
+    max-height: 620px; 
+    flex:1;
     /* background-image: url(images/f0.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     align-items: flex-end;
 }
+
+    /* .videoContainer{
+        position: relative;
+    } */
+
     .hero-video{
-        position:fixed;
+        position: fixed;
+    
         min-width: 100%;
         min-height: 100%;
 
-        top: 50%;
-        left:50%;
+        top:0;
+        left:0;
 
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%), translateY(-50%);
+
+
+        transform:scaleY(2);
         z-index: -1;
     }
 
     .hero-imageContainer{
-        width: 900px;
+        max-width: 900px;
+        width: 100%;
         height: 590px;
         display: flex;
         justify-content: flex-end;
@@ -222,7 +262,7 @@ figure{
         display: flex;
         padding: 10px;
         margin-bottom: 5%;
-        width: 25%;
+
         height: fit-content;
         justify-content: left;
 
@@ -263,7 +303,9 @@ Azul pastel     #2e425e
 .menu{
     display: flex;
     height: 620px; 
-    width: 1250px;
+    max-width: 1250px;
+    width: 100%;
+    flex: 1;
     margin: 0;
     padding: 0;
     padding-top:10px;
@@ -452,10 +494,12 @@ Azul pastel     #2e425e
 
         .promotions{
             /* visibility: hidden; */
-            width: 1250px;
+            display: flex;
+            flex:1;
+            max-width: 1024px;
+            width: 100%;
             height: 620px;
             text-align: center;
-            display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -466,7 +510,8 @@ Azul pastel     #2e425e
             display:flex;
             justify-content: center;
             align-items: flex-end;
-            width: 1250px;
+            max-width: 1024px;
+            width:100%;
             height: 35px;
 
             
@@ -486,8 +531,10 @@ Azul pastel     #2e425e
         .promotions-container{
             background: rgba(255,255,255, 0.6);
             display: flex;
+            flex:1;
             height: 590px;  
-            width: 1250px;
+            max-width: 1250px;
+            width:100%;
             flex-wrap: wrap;
             justify-content: center;
             align-content: flex-start;
@@ -520,7 +567,8 @@ Azul pastel     #2e425e
         
         .promo-bottom{
             margin-top: 10px;
-            width: 1500px;
+            max-width: 1024px;
+            width:100%;
             display:flex;
             align-items:  flex-start;
             justify-content: space-between;
@@ -531,7 +579,8 @@ Azul pastel     #2e425e
         {
             margin: 0 5px;
             height: 320px;
-            width: 1500px;
+            max-width: 1024px;
+            width:100%;
             display: flex;
             flex-direction: column;
             align-content: center;
@@ -544,7 +593,8 @@ Azul pastel     #2e425e
         .promo-promo1 .promo-imageContainer {
             padding: 0;
             height: 310px;
-            width: 1250px;
+            max-width: 1024px;
+            width:100%;
             background: #ff5200;
 
             border-bottom: 0;
@@ -556,7 +606,8 @@ Azul pastel     #2e425e
 
         .promo-promo1 .promo-image{
             height: 290px;
-            width: 1200px;
+            max-width: 1024px;
+            width:100%;
             border: 5px #ff5200 solid;
             border-radius: 15px;
         }
@@ -574,7 +625,8 @@ Azul pastel     #2e425e
             margin: 0 10px;
             background: #fff; /* F445FC */
             height: 225px;
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -585,7 +637,8 @@ Azul pastel     #2e425e
 
         .promo-promo2 .promo-imageContainer {
             height: 225px;
-            width: 600px;
+            max-width: 600px;
+            width:100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -593,7 +646,8 @@ Azul pastel     #2e425e
 
         .promo-promo2 .promo-image{
             height: 220px;
-            width: 400px;
+            max-width: 400px;
+            width:100%;
 
             border: 5px #fff solid;
             border-radius: 15px;
@@ -605,7 +659,8 @@ Azul pastel     #2e425e
             margin: 0 10px;
             background: #fff;   /*F9FF41 */
             height: 225px;
-            width: 600px;
+            max-width: 600px;
+            width:100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -617,7 +672,8 @@ Azul pastel     #2e425e
 
         .promo-promo3 .promo-imageContainer {
             height: 225px;
-            width: 600px;
+            max-width: 600px;
+            width:100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -626,7 +682,8 @@ Azul pastel     #2e425e
 
         .promo-promo3 .promo-image{
             height: 220px;
-            width: 400px;
+            max-width: 400px;
+            width:100%;
 
             border: 5px #fff solid;
             border-radius: 15px;
@@ -642,8 +699,6 @@ Azul pastel     #2e425e
             font-family: 'Russ2';
             line-height: 20px;
         }
-
-
 
 
   
@@ -682,12 +737,12 @@ Azul pastel     #2e425e
 
             display: flex;
             align-items: center;
-            background: #fff;
+            /* background: #fff; */
             display:flex;
             width: 20%;
             height: 60px;
-            border: 5px #fff solid;
-            border-radius: 20px;
+            /* border: 5px #fff solid; */
+            /* border-radius: 20px; */
             margin:0;
             padding: 0;
         }
@@ -707,6 +762,9 @@ Azul pastel     #2e425e
             padding:0;
         }
 
+        .footer-social a{
+            text-decoration: none;
+        }
 
         .footer-apps{
             width: 20%;
@@ -729,3 +787,338 @@ Azul pastel     #2e425e
             margin:5px;
             margin-top:0;
         }
+
+.container{
+    border: 5px solid yellowgreen;
+    max-width: 1024;
+    width: 100%;
+
+}
+
+
+
+
+@media screen  and (max-width:1023px){
+    .hero{
+        max-height: 700px;
+        height: 85vh;
+    }
+
+}
+
+
+@media screen and (max-width:767px){
+    .header{
+        position: fixed;
+        flex-wrap: nowrap;
+    }
+    .header-branch{
+        max-height: 90px;
+        justify-content: center;
+        display: inline-flex;
+    }
+
+    .branch-text h1{
+        font-size: 1.3em;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .header-top-right{
+        max-height: 100px;
+        display:inline-flex;
+        margin-right: 2%;
+
+    }
+    .footer{
+        background: blue;
+    }
+
+    .menu-order .order-btn{
+        font-size: 0.8em;
+    }
+
+
+
+
+    .hero{
+        margin:5px;
+        padding-top: 10%;
+        max-height: 450px;
+        width:100%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .hero-imageContainer{
+        height: 70%;
+        display: flex;
+        visibility: visible;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-image{
+
+        height: 100%;
+        width: 50%;
+    }
+
+    .hero-resume{
+        height: max-content;
+        width:100%;
+        justify-content: center;
+        align-content: flex-start;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    .header{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .logo{
+        visibility: visible;
+        display: flex;
+    }
+
+    .burger-button{
+        display:block;
+    }
+
+    .header-nav.is-active{
+        left: 0;
+    }
+
+    .header-nav{
+        background: rgba(255, 82, 0, 0.5);
+        position: fixed;
+        z-index: 3;
+        top:0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition: 0.5s;
+
+        left: -100vw;
+    } 
+    
+    .header-nav ol{
+        display: block;
+        /* height: auto;  */
+    }
+
+    .header-nav a{
+        height: 70px;
+        font-size: 3em;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .hero-imageContainer{
+        display: none;
+    }
+
+    .hero{
+        margin-top: 22%;
+        max-height: 600px;
+        flex:1;
+        align-items: center;    
+    }
+
+    .hero-resume{
+        padding: 5%;
+    }
+
+    .menu-panel{
+        width:40%;
+    }
+    
+    .menu-list{
+        padding: 0;
+        margin:0;
+        width:80%;
+    }
+
+    .promotions{
+        max-height: 1100px;
+        height: 980px;
+        overflow: hidden;
+        display: flex;
+        align-content: flex-start;
+        
+    }
+    
+    .promotions-slogan{
+        font-size: 0.7em;
+    }
+    
+    .promotions-head{
+        padding-top:5px;
+        display: flex;
+        max-height: 15px;
+        align-items: center;
+        background: #fff;
+    }
+
+    .promotions-container{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .promo-promo1{
+        margin:0;
+    }
+
+    .promo-bottom{
+        flex-wrap: wrap;
+        
+    }
+
+    .promo-promo2{
+        margin-top: 10px;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .promo-promo3{
+        margin: 10px 0;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    
+    .footer{
+        background: #0f1620;
+
+        margin:0;
+        padding: 10px 0;
+        max-width: 480px;
+        width: 100%;
+        display:flex;
+        max-height: 600px;
+        height: fit-content;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    
+    .footer-descriptions{
+        height: fit-content;
+        width: 100%;
+        margin: 10px;
+    }
+    .footer-social{
+        height: fit-content;
+        width: 100%;
+        margin: 10px;
+    }
+    .footer-apps{
+        display: block;
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+
+@media screen and (max-width:320px){
+
+    .logo{
+        display: none;
+        
+    }
+
+    .header{
+        max-height: 300px;
+        height: 230px;
+    }
+
+    .header-branch{
+        margin:0;
+    }
+
+    .header-top-right{
+        font-size: 16px;
+        justify-content: flex-start;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .header-info h4{
+        font-size: 1.6em;
+    }
+   
+    .header-nav ol{
+        display:initial;    
+    }
+
+    .header-nav ol hr{
+        display:none;
+    }
+
+    .header-nav ol li{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .header-nav a{
+        font-size: 30px;
+    }
+   
+
+    .hero-resume{
+        width:100%;
+        margin:10px;
+        padding-bottom: 10%;
+    }
+    .hero-resume h3{
+        font-size: 1.8em;
+    }
+
+    .hero-video{
+        position: fixed;
+/* 
+        min-width: 100%;
+        min-height: 100%; */
+        max-width: 100%;
+        max-height: 200%;
+
+        top:0;
+        left:0;
+
+        transform: translateX(-50%), translateY(-50%);
+
+        transform: scaleY(4);
+
+        z-index: -1;
+    }
+
+    .menu{
+        height: fit-content;
+        flex-wrap: wrap-reverse;
+    }
+    .menu-panel{
+        width: 100%;
+    }
+    .menu-list{
+        width: 100%;
+    }
+
+
+}
+
